@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gil Sans','Gill Sans MT','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url("ai-generated-8662021_1280.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.textpic{
+    width: 20vw;
+    border-radius: 60px;
+    cursor: pointer;
+    box-shadow:2px 2px 10px rgb(82, 243, 82),2px 2px 10px rgb(105, 245, 18);
+}
+.textpic:hover{
+    box-shadow: 2px 2px 10px rgba(10, 244, 181, 0.946),1px 1px rgb(229, 114, 158);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.container h1{
+    font-size: 8vw;
+    background: linear-gradient(to right,rgb(208, 29, 151),rgb(9, 200, 234));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container h2{
+    font-size: 3vw;
+    color: hwb(318 3% 0%);
+}
+.area{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#area{
+    background-color: aliceblue;
+color: #0400ff;
+ width: 60%;
+ height: 30%;
+ padding: 20px;
+ outline: none;
+ border: none;
+ border-radius: 0px 0px 0px 0px;
+ font-size: 20px;
+}
+#write{
+    width: 3%;
+    height: 40%;
+    padding:10px;
+    text-align: center;
+    background: white;
+    border-radius: 0px 0px 0px 20px;
+    border: none;
+}
+#btn{
+    width: 7%;
+    height: 40%;
+    background: white;
+    border: none;
+    border-radius: 0px 15px 1px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: rgb(132, 233, 233);
+    letter-spacing: 1rem;
+    margin-left: 5px;
+    font-size: 25px;
+}
+#write , #area:hover{
+    box-shadow: inset 5px 5px 15px rgb(158, 224, 230), inset 5px 5px 10px rgb(123, 238, 103)
+}
+.chat-container{
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
+.userchat{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    background-color: rgba(155, 247, 227, 0.775);
+    border-radius: 20px 20px 0px 20px;
+    color: #0400ff;
+    font-size: 20px;
+}
+.img{
+    width: 80px;
+    height: 100%;
+}
+.aichat{
+    width: 90%;
+    margin-left: 10%;
+    padding: 20px;
+    display: flex;
+    background-color: rgba(175, 212, 204, 0.912);
+    opacity: 0.8;
+    border-radius: 20px 20px 20px 0px;
+    font-size: 20px;
+    color: #0f0f10;
+}
+h3{
+    font-size: 10px;
+    color: rgb(219, 8, 177);
+    padding-right:10px ;
+}
+ #myvi{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.myvi{
+    margin-right: 15px;
+    border-radius: 10%;
+    border: 2px solid red;
+    box-shadow: 5px 2px 15px rgb(251, 11, 11),2px 2px rgb(108, 245, 3);
+    transition: all 25ms;
+}
+.myvi:hover{
+    box-shadow: 2px 2px 5px rgb(23, 239, 4),2px 5px #04b436;
+    border: none;
+    border-radius: 50%;
+    letter-spacing: 1rem;
+}
